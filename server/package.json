@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "descope airtable waitlist app demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/descope-sample-apps/waitlist-sample-app.git"
+  },
+  "keywords": [
+    "airtable",
+    "descope",
+    "waitlist"
+  ],
+  "author": "Eric Sheen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/descope-sample-apps/waitlist-sample-app/issues"
+  },
+  "homepage": "https://github.com/descope-sample-apps/waitlist-sample-app#readme",
+  "dependencies": {
+    "airtable": "^0.12.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.0",
+    "express": "^4.18.2"
+  }
+}
