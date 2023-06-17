@@ -1,16 +1,10 @@
-require('dotenv').config()
-
 var express = require('express')
-var cors = require('cors')
 var app = express()
 
 var Airtable = require('airtable');
 var base = new Airtable({apiKey: process.env.PERSONAL_ACCESS_TOKEN}).base('appu7hWfYaoLbwEFC');
 
 const PORT = 8000
-
-
-app.use(cors())
 
 
 async function getAirtableByEmail(email) {
@@ -50,3 +44,6 @@ app.get('/check_user/:email', async (req, res) => {
 
 
 app.listen(PORT, () => console.log(`Live at http://localhost:${PORT}`))
+
+
+module.exports=app
