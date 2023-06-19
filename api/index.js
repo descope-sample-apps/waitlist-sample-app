@@ -1,5 +1,4 @@
-var express = require('express')
-var app = express()
+const app = require('express')();
 
 var Airtable = require('airtable');
 var base = new Airtable({apiKey: process.env.PERSONAL_ACCESS_TOKEN}).base('appu7hWfYaoLbwEFC');
@@ -35,7 +34,7 @@ app.get('/check_user/:email', async (req, res) => {
     const airtableEmail = data[0].fields.Email
     const airtableApproved = data[0].fields.Approved
 
-    if (airtableEmail == userFormEmail && airtableApproved) {
+    if (airtableEmail === userFormEmail && airtableApproved) {
         return res.send(true)
     } 
 
