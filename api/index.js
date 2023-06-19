@@ -21,12 +21,7 @@ async function getAirtableByEmail(email) {
 }
 
 
-app.get('/', async (req, res) => {
-    return res.send("test")
-})
-
-
-app.get('/check_user/:email', async (req, res) => {
+app.get('/api/check_user/:email', async (req, res) => {
     console.log("bob")
     const userFormEmail = req.params.email
 
@@ -45,4 +40,4 @@ app.get('/check_user/:email', async (req, res) => {
 app.listen(PORT, () => console.log(`Live at http://localhost:${PORT}`))
 
 
-module.exports=app
+module.exports = app
