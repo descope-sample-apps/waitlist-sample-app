@@ -2,7 +2,6 @@
   "name": "waitlist-sample-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8000",
   "dependencies": {
     "@descope/react-sdk": "^1.0.9",
     "@testing-library/jest-dom": "^5.16.5",
@@ -37,5 +36,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:8000"
 }
