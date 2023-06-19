@@ -34,10 +34,10 @@ app.get('/api/check_user/:email', async (req, res) => {
     const airtableApproved = data[0].fields.Approved
 
     if (airtableEmail === userFormEmail && airtableApproved) {
-        return res.send(true)
+        return res.send({ is_approved: true })
     } 
 
-    return res.send(false)
+    return res.send({ is_approved: true })
 })
 
 
