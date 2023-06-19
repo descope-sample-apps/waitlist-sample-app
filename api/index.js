@@ -26,8 +26,8 @@ async function getAirtableByEmail(email) {
 
 
 app.get('/api/check_user/:email', async (req, res) => {
-    console.log("bob")
     const userFormEmail = req.params.email
+    console.log(userFormEmail)
 
     const data = await getAirtableByEmail(userFormEmail)
     const airtableEmail = data[0].fields.Email
