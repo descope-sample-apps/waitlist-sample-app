@@ -1,9 +1,13 @@
 const app = require('express')();
 
+const https = require('https');
+const http = require('http');
+
 var Airtable = require('airtable');
 var base = new Airtable({apiKey: process.env.PERSONAL_ACCESS_TOKEN}).base('appu7hWfYaoLbwEFC');
 
 const PORT = 8000
+app.set('port', (process.env.PORT || PORT));
 
 
 async function getAirtableByEmail(email) {
@@ -37,7 +41,7 @@ app.get('/api/check_user/:email', async (req, res) => {
 })
 
 
-app.listen(PORT, () => console.log(`Live at http://localhost:${PORT}`))
+app.listen(PORT, () => console.log("Live at, ", app.get('port')))
 
 
 module.exports = app
