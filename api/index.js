@@ -1,8 +1,5 @@
 const app = require('express')();
 
-const https = require('https');
-const http = require('http');
-
 var Airtable = require('airtable');
 var base = new Airtable({apiKey: process.env.PERSONAL_ACCESS_TOKEN}).base('appu7hWfYaoLbwEFC');
 
