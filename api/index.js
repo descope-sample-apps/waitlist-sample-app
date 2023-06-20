@@ -15,7 +15,8 @@ async function getAirtableByEmail(email) {
                     return records
                 })
                 .catch( err => {
-                    return err
+                    console.log(err)
+                    return "Not found"
                 });
 
     return data
@@ -27,6 +28,11 @@ app.get('/api/check_user/:email', async (req, res) => {
     console.log(userFormEmail)
 
     const data = await getAirtableByEmail(userFormEmail)
+
+    if (data === "Not found") {
+        return res.send({ is_approved: false })
+    }
+    
     const airtableEmail = data[0].fields.Email
     const airtableApproved = data[0].fields.Approved
 
