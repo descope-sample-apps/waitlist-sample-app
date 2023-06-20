@@ -44,7 +44,7 @@ app.get('/api/check_user/:email', async (req, res) => {
         return res.send({ is_approved: true })
     } 
 
-    return res.send({ is_approved: true })
+    return res.send({ is_approved: false })
 })
 
 
