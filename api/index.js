@@ -12,11 +12,14 @@ async function getAirtableByEmail(email) {
                 .select({ filterByFormula: `email = "${email}"`})
                 .firstPage()
                 .then(records => {
+                    if (records.length === 0) {
+                        return null
+                    }
                     return records
                 })
                 .catch( err => {
                     console.log(err)
-                    return "Not found"
+                    return null
                 });
 
     return data
@@ -28,11 +31,12 @@ app.get('/api/check_user/:email', async (req, res) => {
     console.log(userFormEmail)
 
     const data = await getAirtableByEmail(userFormEmail)
+    console.log(data)
 
-    if (data === "Not found") {
+    if (!data) {
         return res.send({ is_approved: false })
     }
-    
+
     const airtableEmail = data[0].fields.Email
     const airtableApproved = data[0].fields.Approved
 
