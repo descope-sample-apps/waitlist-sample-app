@@ -38,6 +38,29 @@ app.get('/api/check_user/:email', async (req, res) => {
 })
 
 
+app.post('/api/add_user/:email', (req, res) => {
+    const userFormEmail = req.params.email
+
+    base('Registration').create([
+        {
+            "fields": {
+            "Email": userFormEmail,
+            "First name": "",
+            "Last name": "",
+            "Lead email": userFormEmail,
+            "Approved": false
+            }
+        }], (err, records) => {
+            if (err) {
+                console.error(err);
+                return;
+            }
+            return res.send({ is_approved: false })
+        }
+    );
+})
+
+
 app.listen(PORT, () => console.log("Live at, ", app.get('port')))
 
 
