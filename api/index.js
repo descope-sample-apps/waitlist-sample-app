@@ -19,7 +19,7 @@ async function getAirtableByEmail(email) {
                 })
                 .catch( err => {
                     console.log(err)
-                    return null
+                    return err;
                 });
 
     return data
@@ -60,7 +60,7 @@ app.post('/api/add_user/:email', (req, res) => {
         }], (err, records) => {
             if (err) {
                 console.error(err);
-                return;
+                return err;
             }
             return res.send({ is_approved: false })
         }
