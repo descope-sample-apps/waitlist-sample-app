@@ -1,7 +1,7 @@
 const app = require('express')();
 
 var Airtable = require('airtable');
-var base = new Airtable({apiKey: process.env.PERSONAL_ACCESS_TOKEN}).base('appu7hWfYaoLbwEFC');
+var base = new Airtable({apiKey: process.env.PERSONAL_ACCESS_TOKEN}).base(process.env.AIRTABLE_BASE);
 
 const PORT = 8000
 app.set('port', (process.env.PORT || PORT));
@@ -54,11 +54,8 @@ app.post('/api/add_user/:email', (req, res) => {
     base('Registration').create([
         {
             "fields": {
-            "Email": userFormEmail,
-            "First name": "",
-            "Last name": "",
-            "Lead email": userFormEmail,
-            "Approved": false
+                "Email": userFormEmail,
+                "Approved": false
             }
         }], (err, records) => {
             if (err) {
