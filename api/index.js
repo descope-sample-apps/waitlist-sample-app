@@ -34,7 +34,7 @@ app.get('/api/check_user/:email', async (req, res) => {
     console.log(data)
 
     if (!data) {
-        return res.send({ is_approved: false })
+        return res.send({ is_approved: "add" })
     }
 
     const airtableEmail = data[0].fields.Email
