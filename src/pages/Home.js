@@ -31,7 +31,7 @@ function Home() {
                         { !isAuthenticated &&
                             (
                             <Descope
-                                flowId="airtable"
+                                flowId="waitlist"
                                 onSuccess = {(e) => console.log(e.detail.user)}
                                 onError={(e) => console.log('Could not log in!')}
                             />
