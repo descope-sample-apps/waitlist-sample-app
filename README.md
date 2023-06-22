@@ -43,7 +43,7 @@ Now let’s set up our Descope Project.
 
 1. Create an account in [Vercel](https://vercel.com/) and create a new Team.
 2. Create a new Project and import your GitHub Repository
-3. Set your environment variables: REACT_APP_PROJECT_ID, AIRTABLE_BASE, and PERSONAL_ACCESS_TOKEN. To clarify, the REACT_APP_PROJECT_ID is your Descope project ID. 
+3. Set your environment variables: ```REACT_APP_PROJECT_ID```, ```AIRTABLE_BASE```, and ```PERSONAL_ACCESS_TOKEN```. To clarify, the ```REACT_APP_PROJECT_ID``` is your Descope project ID. 
 
 <br />
 
