@@ -41,6 +41,12 @@ Now let’s set up our Descope Project.
 
 ## Deploy to Vercel 🚀
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdescope-sample-apps%2Fwaitlist-sample-app)
+
+> **NOTE**: Make sure to set your environment variables. Instructions below.  
+
+### Manual Deploy + Environment Variables
+
 1. Create an account in [Vercel](https://vercel.com/) and create a new Team.
 2. Create a new Project and import your GitHub Repository
 3. Set your environment variables: ```REACT_APP_PROJECT_ID```, ```AIRTABLE_BASE```, and ```PERSONAL_ACCESS_TOKEN```. To clarify, the ```REACT_APP_PROJECT_ID``` is your Descope project ID. 
