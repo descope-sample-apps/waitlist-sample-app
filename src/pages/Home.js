@@ -24,7 +24,7 @@ function Home() {
                 <div>
                     <h1>A Better <span className='blue'>Waitlist.</span></h1>
                     <p>
-                        Using <a href='https://docs.descope.com/customize/flows/' rel="noreferrer" target='_blank'>Descope Flows</a> with <a href='https://docs.descope.com/customize/flows/' rel="noreferrer" target='_blank'>Connectors</a> you can now create beautiful custom Waitlist Form with Authentication. 
+                        Using <a href='https://docs.descope.com/customize/flows/' rel="noreferrer" target='_blank'>Descope Flows</a> with <a href='https://docs.descope.com/customize/connectors/' rel="noreferrer" target='_blank'>Connectors</a> you can now create beautiful custom Waitlist Form with Authentication. 
                         If you're approved on Airtable just input your email address to login.
                     </p>
                     <div className='descope-widget'>
