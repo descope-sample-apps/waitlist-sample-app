@@ -60,9 +60,5 @@ Fig: Vercel deployment
 
 When you deploy to Vercel, there will be errors because we did not create our Descope flow yet. Let’s leave this aside for now and build out our APIs!
 
-<br />
-
-### Happy Coding ☕ 
-
 
 
