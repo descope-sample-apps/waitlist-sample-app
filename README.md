@@ -12,8 +12,7 @@ First, let’s set up our Airtable.
 
 <br />
 
-<img src="./readme-assets/airtable.png"/>
-Fig: airtable base with Email and Approved columns 
+<img src="./readme-assets/airtable.png"/> 
 
 <br />
 
@@ -22,7 +21,6 @@ Fig: airtable base with Email and Approved columns
 <br />
 
 <img src="./readme-assets/personal_access_token.png"/>
-Fig: personal access token creation 
 
 <br />
 
@@ -32,7 +30,6 @@ Fig: personal access token creation
 <br />
 
 <img src="./readme-assets/airtable_base.png"/>
-Fig: Airtable base is highlighted in the curl
 
 <br />
 
@@ -41,11 +38,11 @@ Now let’s set up our Descope Project.
 
 ## Deploy to Vercel 🚀
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdescope-sample-apps%2Fwaitlist-sample-app)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdescope-sample-apps%2Fwaitlist-sample-app&env=REACT_APP_PROJECT_ID,AIRTABLE_BASE,PERSONAL_ACCESS_TOKEN)
 
 > **NOTE**: Make sure to set your environment variables. Instructions below.  
 
-### Manual Deploy + Environment Variables
+### Environment Variables
 
 1. Create an account in [Vercel](https://vercel.com/) and create a new Team.
 2. Create a new Project and import your GitHub Repository
@@ -54,7 +51,6 @@ Now let’s set up our Descope Project.
 <br />
 
 <img src="./readme-assets/vercel_env.png"/>
-Fig: Vercel deployment
 
 <br />
 
