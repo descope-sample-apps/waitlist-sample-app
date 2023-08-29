@@ -1,6 +1,6 @@
-![waitlist](https://github.com/descope-sample-apps/waitlist-sample-app/assets/59460685/f23c1410-2c46-4d36-8f98-186b00fe6026)
+![waitlist](https://github.com/descope-sample-apps/waitlist-sample-app/assets/59460685/10ac6e2f-d2b8-49dd-9183-f2b6588889ce)
 
----
+# A Better Waitlist
 
 Implement a Waitlist app with Descope Flows and Airtable. 
 
