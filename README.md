@@ -1,4 +1,6 @@
-# waitlist-sample-app
+![waitlist](https://github.com/descope-sample-apps/waitlist-sample-app/assets/59460685/f23c1410-2c46-4d36-8f98-186b00fe6026)
+
+---
 
 Implement a Waitlist app with Descope Flows and Airtable. 
 
@@ -21,7 +23,7 @@ Implement a Waitlist app with Descope Flows and Airtable.
 1. Clone the repository:
 
 ```
-git clone https://github.com/descope-sample-apps/svelte-sample-app.git
+git clone https://github.com/descope-sample-apps/waitlist-sample-app.git
 ```
 
 2. Install dependencies:
