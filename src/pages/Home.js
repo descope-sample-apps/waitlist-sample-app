@@ -31,7 +31,7 @@ function Home() {
                         { !isAuthenticated &&
                             (
                             <Descope
-                                flowId="waitlist"
+                                flowId={process.env.REACT_APP_FLOW_ID || "waitlist"}
                                 onSuccess = {(e) => console.log(e.detail.user)}
                                 onError={(e) => console.log('Could not log in!')}
                             />
