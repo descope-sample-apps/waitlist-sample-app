@@ -40,6 +40,7 @@ AIRTABLE_BASE="YOUR_AIRTABLE_BASE"
 PERSONAL_ACCESS_TOKEN="YOUR_AIRTABLE_PERSONAL_ACCESS_TOKEN"
 ```
 - ```REACT_APP_PROJECT_ID```: is your Descope Project ID and can be found in your Descope's account under the [Project page](https://app.descope.com/settings/project).
+- ```REACT_APP_FLOW_ID```: is your Descope Flow ID, of the flow you wish to use in your waitlist app.
 - ```AIRTABLE_BASE```: can be found in the your Airtable base. Learn more [here](https://support.google.com/appsheet/answer/10106767).
 - ```PERSONAL_ACCESS_TOKEN```: you can create and personal access in Airtable [here](https://airtable.com/create/tokens).
 
